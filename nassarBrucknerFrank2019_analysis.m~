@@ -54,7 +54,7 @@ dataDir='/Users/LabManager/Dropbox (Brown)/cannonEegData/alt_preprocess';  % sho
 % Flags:
 
 forceRunRegs             =false; % do you want to run regression? -- if not it will load the most recently saved reg data
-doSigTesting             =false;
+             =false;
 runRoiAnalysis           =true;
 showVM_approximation     =false;
 byHand                   =false; % scroll through movies by hand?
@@ -104,7 +104,7 @@ ROIs_forSingleTrialAnalysis={'basicCoeffs_cpPlusOdd', 'basicCoeffs_cpMinusOdd'};
 %% RUN ANALYSIS:
 
 
-  
+
 addpath(dataDir);
 addpath(behavDataDir);
 addpath(genpath(scriptDir));

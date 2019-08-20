@@ -62,16 +62,3 @@ close all
 
 
 
-xMat=[ones(sum(goodSub),1), zscore(contextualSurpriseEffectOnLR(goodSub))];
-
-for i =1:4
-   [B,BINT,R,RINT,STATS] = regress(allRelCoeffs(:,i), xMat);
-   
-   
-   expSEM=allRelSTDs(:,i);
-   [b, bint] = regressW_mrn(allRelCoeffs(:,i),expSEM,xMat);
-    BINT
-    bint
-end
-
-
